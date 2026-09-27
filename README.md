@@ -1,5 +1,7 @@
 # data-scope-spring-boot-starter
 
+[![CI](https://github.com/BIGLV666/data-scope-spring-boot-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/BIGLV666/data-scope-spring-boot-starter/actions/workflows/ci.yml) [![Status](https://img.shields.io/badge/Maven%20Central-%E5%BE%85%E5%8F%91%E5%B8%83-yellow)](https://github.com/BIGLV666/data-scope-spring-boot-starter)
+
 轻量级**行级数据权限**组件：`@DataScope` 注解 + SQL 自动改写。同一个接口，销售只看自己
 的订单、主管看本部门、admin 看全部——业务代码与 SQL 零改动。
 
@@ -26,6 +28,8 @@ auth-kit 管"这个接口你能不能调"，data-scope 管"调通后你能看到
     <version>1.0.0</version>
 </dependency>
 ```
+
+> 组件暂未发布到 Maven Central，通过 GitHub 源码分发：clone 本仓库后在根目录执行 `mvn install`，即可用上方坐标引用。
 
 ```yaml
 data-scope:
